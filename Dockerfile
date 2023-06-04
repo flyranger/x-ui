@@ -1,4 +1,5 @@
 FROM golang:latest AS builder
+EXPOSE 80
 WORKDIR /root
 COPY . .
 RUN go build main.go
